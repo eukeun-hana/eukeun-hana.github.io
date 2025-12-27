@@ -13,11 +13,35 @@ function copyLink(){
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("링크가 복사되었습니다. 널리널리 퍼뜨려주세요💕")
+	alert("링크가 복사되었습니다.")
 }
 
-// 신부 계좌번호 복사
-function brideAccountNumber(){
+// 신랑 아버님 계좌번호 복사 
+function groomsFatherAccountNumber(){
+	var groom_account = '241210236490 노재이 국민은행';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	textarea.value = groom_account;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("계좌번호가 복사되었습니다.\n241210236490 노재이 국민은행")
+}
+
+// 신랑 어머님 계좌번호 복사 
+function groomsMotherAccountNumber(){
+    var grooms_father_account = '241210188117 박하영 국민은행';
+	var textarea = document.createElement("textarea");
+	document.body.appendChild(textarea);
+	textarea.value = grooms_father_account;
+	textarea.select();
+	document.execCommand("copy");
+	document.body.removeChild(textarea);
+	alert("계좌번호가 복사되었습니다.\n241210188117 박하영 국민은행")
+}
+
+// 신부 아버님 계좌번호 복사
+function bridesFatherAccountNumber(){
 	var bride_account = '00000000 카카오뱅크';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
@@ -25,33 +49,20 @@ function brideAccountNumber(){
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("신부의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+	alert("계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
 }
 
-// 신랑 계좌번호 복사
-function groomAccountNumber(){
-	var groom_account = '00000000 카카오뱅크';
+// 신부 어머님 계좌번호 복사
+function bridesMotherAccountNumber(){
+	var bride_account = '00000000 카카오뱅크';
 	var textarea = document.createElement("textarea");
 	document.body.appendChild(textarea);
-	textarea.value = groom_account;
+	textarea.value = bride_account;
 	textarea.select();
 	document.execCommand("copy");
 	document.body.removeChild(textarea);
-	alert("신랑의 계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
+	alert("계좌번호가 복사되었습니다.\n00000000 카카오뱅크")
 }
-
-// 아버님 계좌번호 복사 
-function groomsFatherAccountNumber(){
-    var grooms_father_account = '00000000 국민은행';
-	var textarea = document.createElement("textarea");
-	document.body.appendChild(textarea);
-	textarea.value = grooms_father_account;
-	textarea.select();
-	document.execCommand("copy");
-	document.body.removeChild(textarea);
-	alert("계좌번호가 복사되었습니다.\n00000000 국민은행")
-}
-
 
 // 카카오톡 공유하기
 function kakaoShare() {
