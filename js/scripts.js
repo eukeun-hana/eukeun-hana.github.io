@@ -66,7 +66,7 @@ function bridesMotherAccountNumber(){
 
 // 카카오톡 공유하기
 function kakaoShare() {
-    Kakao.init('7de98789a5d9701a7ab3866b9b94ef58');
+    Kakao.init('3e0929bbec4eb0b003f0e15a5b6b7485');
     // SDK 초기화 여부를 판단합니다.
     Kakao.isInitialized();
     //console.log(Kakao.isInitialized());
