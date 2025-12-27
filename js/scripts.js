@@ -66,27 +66,26 @@ function bridesMotherAccountNumber(){
 
 // 카카오톡 공유하기
 function kakaoShare() {
-    Kakao.init('YOUR APP KEY');
+    Kakao.init('7de98789a5d9701a7ab3866b9b94ef58');
     // SDK 초기화 여부를 판단합니다.
     Kakao.isInitialized();
     //console.log(Kakao.isInitialized());
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-        title: '재윤🤍영석 결혼합니다.',
-        description: '2024.03.01\n11시 30분 빌라드지디 청담',
-        imageUrl: 'https://github.com/jaeyun95/jaeyun95.github.io/blob/main/assets/img/main.jpg?raw=true',
+        title: '의건🤍하나 결혼합니다.',
+        imageUrl: 'https://github.com/eukeun-hana/eukeun-hana.github.io/blob/main/assets/img/main.jpg?raw=true',
         link: {
-            mobileWebUrl: 'https://comgongnuna.github.io/#!',
-            webUrl: 'https://comgongnuna.github.io/#!',
+            mobileWebUrl: 'https://eukeun-hana.github.io/#!',
+            webUrl: 'https://eukeun-hana.github.io/#!',
         },
         },
         buttons: [
         {
             title: '모바일 청첩장 보기',
             link: {
-            mobileWebUrl: 'https://comgongnuna.github.io/#!',
-            webUrl: 'https://comgongnuna.github.io/#!',
+            mobileWebUrl: 'https://eukeun-hana.github.io/#!',
+            webUrl: 'https://eukeun-hana.github.io/#!',
             },
         },
         ],
