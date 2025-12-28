@@ -145,3 +145,22 @@ function toggleFoldable3() {
         // 추가로 접힌 상태에서 수행할 동작 추가 가능
     }
 }
+
+let current = 0;
+const cards = document.querySelectorAll(".card");
+
+function showCard(index) {
+  cards.forEach((card, i) => {
+    card.classList.remove("active", "prev");
+
+    if (i === index) card.classList.add("active");
+    if (i === index - 1) card.classList.add("prev");
+  });
+}
+
+document.addEventListener("click", () => {
+  current = (current + 1) % cards.length;
+  showCard(current);
+});
+
+showCard(current);
