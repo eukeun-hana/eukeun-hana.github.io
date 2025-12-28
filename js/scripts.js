@@ -72,20 +72,20 @@ function kakaoShare() {
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
-        title: '의건🤍하나 결혼합니다.',
-		description: '2026.03.15',
-        imageUrl: 'https://github.com/eukeun-hana/eukeun-hana.github.io/blob/main/assets/img/main.jpg?raw=true',
+			title: '의건🤍하나 결혼합니다.',
+			description: '2026.03.15',
+			imageUrl: 'https://github.com/eukeun-hana/eukeun-hana.github.io/blob/main/assets/img/main.jpg?raw=true',
         	link: {
-				mobileWebUrl: 'https://eukeun-hana.github.io/#!',
-				webUrl: 'https://eukeun-hana.github.io/#!',
+				mobileWebUrl: 'https://eukeun-hana.github.io/',
+				webUrl: 'https://eukeun-hana.github.io/',
 			},
 		},
         buttons: [
 	        {
 	            title: '모바일 청첩장 보기',
 	            link: {
-					mobileWebUrl: 'https://eukeun-hana.github.io/#!',
-					webUrl: 'https://eukeun-hana.github.io/#!',
+					mobileWebUrl: 'https://eukeun-hana.github.io/',
+					webUrl: 'https://eukeun-hana.github.io/',
 	            },
 			},
 		],
