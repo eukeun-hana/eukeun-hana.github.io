@@ -74,11 +74,12 @@ function kakaoShare() {
         objectType: 'feed',
         content: {
         title: '의건🤍하나 결혼합니다.',
+		description: '2026.03.15',
         imageUrl: 'https://github.com/eukeun-hana/eukeun-hana.github.io/blob/main/assets/img/main.jpg?raw=true',
-        link: {
-            mobileWebUrl: 'https://eukeun-hana.github.io/#!',
-            webUrl: 'https://eukeun-hana.github.io/#!',
-        },
+        	link: {
+          	  mobileWebUrl: 'https://eukeun-hana.github.io/#!',
+           	 webUrl: 'https://eukeun-hana.github.io/#!',
+        	},
         },
         buttons: [
         {
@@ -92,9 +93,6 @@ function kakaoShare() {
         // 카카오톡 미설치 시 카카오톡 설치 경로이동
         installTalk: true,
     })
-	setTimeout(() => {
-			location.reload();
-	}, 500);
 }
 
 function toggleFoldable() {
