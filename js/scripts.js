@@ -92,6 +92,9 @@ function kakaoShare() {
         // 카카오톡 미설치 시 카카오톡 설치 경로이동
         installTalk: true,
     })
+	setTimeout(() => {
+			location.reload();
+	}, 500);
 }
 
 function toggleFoldable() {
