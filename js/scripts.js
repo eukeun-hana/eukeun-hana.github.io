@@ -69,6 +69,10 @@ function kakaoShare() {
 	if (!Kakao.isInitialized()) {
 		Kakao.init('3e0929bbec4eb0b003f0e15a5b6b7485');
 	}
+
+	Kakao.Link.sendCustom({
+		templateId: {127213}
+	});
     Kakao.Share.sendDefault({
         objectType: 'feed',
         content: {
