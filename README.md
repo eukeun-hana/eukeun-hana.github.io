@@ -1,1 +1,1 @@
-# eukeun-hana.github.io
+# https://eukeun-hana.github.io/wedding-notice
