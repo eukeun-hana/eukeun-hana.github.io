@@ -4,23 +4,32 @@
   <meta charset="UTF-8" />
   <title>Redirecting...</title>
 
-  <!-- SEO / 카카오 기준 원본 주소 -->
-  <link rel="canonical" href="https://eukeun-hana.github.io/wedding-notice" />
-  <meta property="og:url" content="https://eukeun-hana.github.io/wedding-notice" />
-
-  <!-- 즉시 리다이렉트 -->
-  <meta http-equiv="refresh" content="0; url=https://eukeun-hana.github.io/wedding-notice" />
-
-  <!-- JS 백업 (일부 브라우저 대응) -->
   <script>
-    location.replace("https://eukeun-hana.github.io/wedding-notice");
+    const path = window.location.pathname;
+
+    let target = "https://eukeun-hana.github.io/wedding-notice/"; // fallback
+
+    if (path.includes("wedding-notice-0314")) {
+      target = "https://eukeun-hana.github.io/wedding-notice-0314"; // wedding-notice-0314 로 들어왔을 때
+    } else if (path.includes("wedding-notice/")) {
+      target = "https://eukeun-hana.github.io/wedding-notice/"; // wedding-notice 로 들어왔을 때
+    }
+
+    // OG / canonical도 같이 맞춰줌
+    document.write(`
+      <link rel="canonical" href="${target}" />
+      <meta property="og:url" content="${target}" />
+      <meta http-equiv="refresh" content="0; url=${target}" />
+    `);
+
+    location.replace(target);
   </script>
 </head>
 <body>
   <noscript>
     <p>
       이동 중입니다.
-      <a href="https://eukeun-hana.github.io/wedding-notice">여기를 눌러주세요</a>
+      <a href="https://eukeun-hana.github.io/wedding-notice/">여기를 눌러주세요</a>
     </p>
   </noscript>
 </body>
